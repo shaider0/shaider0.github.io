@@ -40,11 +40,11 @@
 				window.location.hash = hash;
 			});
 		});
-		$(".smooth").on('click', function (e) {
-			if (navToggler.is(':visible')) {
-				navToggler.click();
-			}
-		});
+		// $(".smooth").on('click', function (e) {
+		// 	if (navToggler.is(':visible')) {
+		// 		navToggler.click();
+		// 	}
+		// });
 
 		$('body').on('activate.bs.scrollspy', function () {
 			console.log('nice');
