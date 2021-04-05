@@ -40,16 +40,27 @@
 				window.location.hash = hash;
 			});
 		});
-		// $(".smooth").on('click', function (e) {
-		// 	if (navToggler.is(':visible')) {
-		// 		navToggler.click();
-		// 	}
-		// });
-
+		$(".smooth").on('click', function (e) {
+			if (navToggler.is(':visible')) {
+				navToggler.click();
+			}
+		});
 		$('body').on('activate.bs.scrollspy', function () {
 			console.log('nice');
 		})
+		$(".smooth-learn").on('click', function (e) {
+			e.preventDefault();
+			var hash = this.hash;
+
+			$('html, body').animate({
+
+				scrollTop: $(hash).offset().top
+			}, 700, 'easeInOutExpo', function () {
+				window.location.hash = hash;
+			});
+		});
 	};
+
 
 
 
